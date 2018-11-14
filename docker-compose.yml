@@ -4,16 +4,10 @@ services:
   jenkins:
     image: jenkinsci/blueocean
     user: root
+    environment: 
+      JENKINS_DATA: ${PWD}/jenkins-data
     volumes: 
       - ./jenkins-data:/var/jenkins_home
-      - ./html:/html
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 8038:8080
-
-  nginx:
-    image: nginx:alpine
-    volumes:
-      - ./html:/usr/share/nginx/html
-    ports:
-      - 80:80
