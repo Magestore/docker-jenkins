@@ -42,3 +42,16 @@ Notes:
 3. If required, log in to Jenkins with the credentials of the user you just created and you’re ready to start using Jenkins!
 
 ## Setup Repository
+
+1. Click create new job
+![create new job](https://image.prntscr.com/image/MVvIJRHcSZC5D3hRxLHxrA.png)
+
+2. Enter git repository name and select type is pipeline, click OK
+![name and type](https://image.prntscr.com/image/RUiWBV9lRPihMlvu3ygFTA.png)
+
+3. Enter repo config and save.
+
+    - In `Build Triggers` section, check to `GitHub hook trigger for GITScm polling`
+    - In `Pipeline` section, select Denfinition `Pipeline script from SCM`, enter git repository to work with
+
+Apply similar to other repository...
