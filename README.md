@@ -26,7 +26,7 @@ On this page, click Install suggested plugins.
 The setup wizard shows the progression of Jenkins being configured and the suggested plugins being installed. This process may take a few minutes.
 
 **Creating the first administrator user**
-Finally, Jenkins asks you to create your first administrator user.
+Finally, Jenkins asks you to create your first administrator user with username and password are `jenkins/jenkins`
 
 1. When the Create First Admin User page appears, specify your details in the respective fields and click Save and Finish.
 
