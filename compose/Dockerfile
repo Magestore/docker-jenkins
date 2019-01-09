@@ -4,6 +4,9 @@ RUN apk add curl \
     && apk add git \
     && apk add nodejs \
     && apk add nodejs-npm \
+    && apk add python \
+    && apk add make \
+    && apk add gcc \
     && rm -rf /var/cache/apk/*
 
 ENTRYPOINT [ "tail", "-f", "/dev/null" ]
