@@ -1,4 +1,4 @@
-FROM docker/compose:1.23.1
+FROM docker/compose:1.23.2
 
 RUN apk add curl \
     && apk add git \
