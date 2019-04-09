@@ -11,3 +11,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 8038:8080
+    restart: unless-stopped
